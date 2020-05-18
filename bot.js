@@ -18,7 +18,7 @@ const getData = async (url) => {
       return await response.json();
     }
   } catch (error) {
-    console.log(error);
+    console.log("Error: " + error);
   }
 };
 
@@ -40,7 +40,7 @@ const getTodayDetails = (ctx) => {
     })
     .catch((error) => {
       console.log(error);
-      ctx.reply("Error occured!! Notify Maintainer")
+      ctx.reply("Error occured!! Notify Maintainer");
     });
 };
 
