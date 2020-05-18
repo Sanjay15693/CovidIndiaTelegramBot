@@ -19,7 +19,6 @@ const getData = async (url) => {
     }
   } catch (error) {
     console.log(error);
-    return null;
   }
 };
 
