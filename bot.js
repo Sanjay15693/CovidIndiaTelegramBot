@@ -7,6 +7,7 @@ bot.use(async (ctx, next) => {
   const start = new Date();
   await next();
   const ms = new Date() - start;
+  const something = "test";
   console.log("Response time: %sms", ms);
 });
 
